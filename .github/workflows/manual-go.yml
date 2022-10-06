@@ -3,6 +3,10 @@ name: Manual Build and release
 on: 
   workflow_dispatch:
 
+permissions:
+  id-token: write
+  contents: read
+
 jobs:
   manual-build-ubuntu:
     runs-on: ubuntu-latest

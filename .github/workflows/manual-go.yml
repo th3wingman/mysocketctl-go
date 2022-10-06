@@ -23,7 +23,7 @@ jobs:
         uses: aws-actions/configure-aws-credentials@v1
         with:
           aws-region: us-east-2
-          role-to-assume: ${{ secrets.DEV_ROLE_TO_ASSUME }}
+          role-to-assume: arn:aws:iam::937166400989:role/GhActionRole_th3wingman_mysocketctl-go
           role-session-name: MAnualBuildAndDeploy
           role-duration-seconds: 1200
 

@@ -52,7 +52,6 @@ jobs:
           ls
       - name: Run Make release
         run: |
-          make all
           make release
           make release-border0
       - name: See dist bin directory
